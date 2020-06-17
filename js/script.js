@@ -52,7 +52,7 @@ btnCancel.addEventListener("click", function () {
 
     document.getElementById("name").value = "";
     document.getElementById("surname").value = "";
-    document.getElementById("category").value = "";
+    document.getElementById("category").value = "adult";
     document.getElementById("km").value = "";
 
 })
