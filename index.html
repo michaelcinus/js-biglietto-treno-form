@@ -7,26 +7,40 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- FORM -->
+    <div class="container">
+        <!-- FORM -->
     <div id="form">
-           <input id="name" type="text" name="name" placeholder="Name">
-           <input id="surname" type="text" name="surname" placeholder="Surname">
-           <br>
-           How long is the trip? <input id="km" type="number" name="km" placeholder="km">
-           <br>
-           <input id="category" type="radio" name="gender" value="adult" checked> Adult
-           <input id="category" type="radio" name="gender" value="underage"> Underage
-           <input id="category" type="radio" name="gender" value="over65"> Over65
-           <button id="buy">Buy</button>
-           <button id="cancel">Cancel</button>
+        <div>Name <input id="name" type="text" name="name" placeholder="Name">
+            <input id="surname" type="text" name="surname" placeholder="Surname"></div> 
+        <div>How long is the trip? <input id="km" type="number" name="km" placeholder="km"></div>
+        <div>Category <select name="category" id="category">
+            <option value="adult">Adult</option>
+            <option value="under18">Under18</option>
+            <option value="over65">Over65</option>
+        </select>
+    </div>
+        <div>
+            <button id="buy">BUY</button>
+            <button id="cancel">CANCEL</button>
+            preparation and completion of the exercise   </div>
     </div>
     <!-- TICKET -->
-    <div id="ticket" class="show hide">
-
+    <div id="ticket" class="hidden show ">
+        <div class="passenger">
+            Name <h4 id="visName"></h4>
+            Surname <h4 id="visSurname"></h4>
+            Category <h4 id="visCategory"></h4>
+        </div>
+        <div class="train">
+            Num Train<h4 id="numTrain"></h4>
+            Num Carriage <h4 id="numCarriage"></h4>
+        </div>
+        <div class="price">
+            Price for km <h4 id="priceTot"></h4>
+            Discount <h4 id="discount"></h4>
+            Price Discounted <h4 id="priceDisc"></h4>
+        </div>
     </div>
-
-
-    
     <script src="js/script.js"></script> 
 </body>
 </html>
